@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { useRef } from "react";
 
@@ -18,14 +17,14 @@ const Header = () => {
   return (
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
-        <Image
-          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        <img
+          src="/google.svg"
           height={40}
-          width={120}
+          width={40}
           className="cursor-pointer"
           onClick={() => router.push("/")}
         />
-        <form className="px-6 py-3 ml-10 mr-5 max-w-2xl flex flex-grow border border-gray-200 rounded-full shadow-lg ">
+        <form className="px-4 py-2 sm:px-6 sm:py-3 mx-3 sm:ml-10 max-w-2xl flex flex-grow border border-gray-200 rounded-full shadow-lg ">
           <input
             ref={searchInputRef}
             defaultValue={router.query.query}
@@ -33,15 +32,15 @@ const Header = () => {
             className="flex-grow w-full focus:outline-none"
           />
           <XIcon
-            className="h-7 mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
+            className="h-7 mr-1 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125"
             onClick={() => (searchInputRef.current.value = "")}
           />
-          <SearchIcon className="h-7 mr-1 pl-4 text-blue-500 border-l-2 border-gray-300" />
+          <SearchIcon className="h-7 mr-1 pl-1 sm:pl-4 text-blue-500 border-l-2 border-gray-300" />
           <button type="submit" hidden onClick={search}>
             Search
           </button>
         </form>
-        <ViewGridIcon className="h-10 w-10 p-2 mr-2 ml-auto rounded-full cursor-pointer text-gray-500 hover:bg-gray-100" />
+        <ViewGridIcon className="h-10 w-10 p-2 mr-2 ml-auto rounded-full cursor-pointer text-gray-500 hover:bg-gray-100 hidden sm:inline-flex" />
         <Avatar url="https://i.ibb.co/0cDKvfd/photo01-square.jpg" />
       </div>
 

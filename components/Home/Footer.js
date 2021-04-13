@@ -19,13 +19,13 @@ const Footer = () => {
         <p className="ml-7 text-base text-gray-600 ">{country}</p>
       </div>
       <div className="p-3 grid grid-cols-1 md:grid-cols-2 gap-y-4 grid-flow-row-dense">
-        <div className="ml-5 flex justify-center space-x-8 whitespace-nowrap md:justify-self-start">
+        <div className="ml-5 mr-5 flex justify-center space-x-8 whitespace-nowrap md:justify-self-start">
           <p>About</p>
           <p>Advertising</p>
           <p>Business</p>
           <p>How search works</p>
         </div>
-        <div className=" mr-5 flex justify-center space-x-8 md:ml-auto">
+        <div className="mr-5 flex justify-center space-x-8 md:ml-auto">
           <p>Privacy</p>
           <p>Terms</p>
           <p>Settings</p>
