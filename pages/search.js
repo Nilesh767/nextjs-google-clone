@@ -1,11 +1,13 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Header from "../components/Search/Header/Header";
+import SearchResults from "../components/Search/Results/SearchResults";
 
 import { API_KEY, CONTEXT_KEY } from "../keys";
 import Response from "../Response";
 
 const Search = ({ results }) => {
+  console.log(results);
   const router = useRouter();
   return (
     <div>
@@ -13,7 +15,7 @@ const Search = ({ results }) => {
         <title>{router.query.query} - Google Search</title>
       </Head>
       <Header />
-      
+      <SearchResults results={results} />
     </div>
   );
 };
@@ -21,7 +23,7 @@ const Search = ({ results }) => {
 export default Search;
 
 export async function getServerSideProps(context) {
-  const useDummy = true;
+  const useDummy = false;
   const startIndex = context.query.start || "0";
   const data = useDummy
     ? Response
