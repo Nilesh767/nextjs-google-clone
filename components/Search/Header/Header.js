@@ -11,9 +11,9 @@ const Header = () => {
   const router = useRouter();
   const search = (e) => {
     e.preventDefault();
-    const searchTerm = searchInputRef.current.value;
-    if (!searchTerm) return;
-    router.push(`/search?term=${searchTerm}`);
+    const query = searchInputRef.current.value;
+    if (!query) return;
+    router.push(`/search?query=${query}`);
   };
   return (
     <header className="sticky top-0 bg-white">
