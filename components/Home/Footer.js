@@ -6,11 +6,10 @@ const Footer = () => {
     fetch("https://extreme-ip-lookup.com/json/")
       .then((res) => res.json())
       .then((response) => {
-        console.log("Country: ", response.country);
         setCountry(response.country);
       })
       .catch((data, status) => {
-        console.log("Request failed");
+        alert("Request failed");
       });
   }, []);
 

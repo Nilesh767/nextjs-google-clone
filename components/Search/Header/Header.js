@@ -28,7 +28,7 @@ const Header = () => {
         <form className="px-6 py-3 ml-10 mr-5 max-w-2xl flex flex-grow border border-gray-200 rounded-full shadow-lg ">
           <input
             ref={searchInputRef}
-            placeholder={router.query.query}
+            defaultValue={router.query.query}
             type="text"
             className="flex-grow w-full focus:outline-none"
           />

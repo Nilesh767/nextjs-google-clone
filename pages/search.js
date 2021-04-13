@@ -7,7 +7,6 @@ import { API_KEY, CONTEXT_KEY } from "../keys";
 import Response from "../Response";
 
 const Search = ({ results }) => {
-  console.log(results);
   const router = useRouter();
   return (
     <div>
