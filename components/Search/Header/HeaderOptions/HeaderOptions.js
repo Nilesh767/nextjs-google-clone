@@ -7,7 +7,7 @@ import {
   BookOpenIcon,
 } from "@heroicons/react/outline";
 
-import HeaderOption from "./HeaderOption";
+import HeaderOption from "./HeaderOption/HeaderOption";
 
 const HeaderOptions = () => {
   return (
