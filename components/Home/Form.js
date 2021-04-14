@@ -16,6 +16,11 @@ const Form = () => {
     router.push(`/search?query=${query}`);
   };
 
+  const feelingLucky = (e) => {
+    e.preventDefault();
+    alert("Imagine Feeling Lucky... KEKW!");
+  };
+
   return (
     <form className="flex flex-col flex-grow items-center mt-32 md:mt-40 lg:mt-44 w-4/5">
       <Image
@@ -39,7 +44,9 @@ const Form = () => {
         <button className="btn" onClick={search}>
           Google Search
         </button>
-        <button className="btn">I'm Feeling Lucky</button>
+        <button className="btn" onClick={feelingLucky}>
+          I'm Feeling Lucky
+        </button>
       </div>
     </form>
   );
