@@ -41,7 +41,7 @@ const Header = () => {
           </button>
         </form>
         <ViewGridIcon className="h-10 w-10 p-2 mr-2 ml-auto rounded-full cursor-pointer text-gray-500 hover:bg-gray-100 hidden sm:inline-flex" />
-        <Avatar url="https://i.ibb.co/0cDKvfd/photo01-square.jpg" />
+        <Avatar />
       </div>
 
       <HeaderOptions />

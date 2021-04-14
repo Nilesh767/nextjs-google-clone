@@ -13,7 +13,7 @@ const Header = () => {
         <p className="link">Gmail</p>
         <p className="link">Images</p>
         <ViewGridIcon className="h-10 w-10 p-2 rounded-full cursor-pointer hover:bg-gray-100 hidden sm:inline-flex" />
-        <Avatar url="https://i.ibb.co/0cDKvfd/photo01-square.jpg" />
+        <Avatar />
       </div>
     </header>
   );
