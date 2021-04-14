@@ -17,7 +17,7 @@ const Form = () => {
   };
 
   return (
-    <form className="flex flex-col flex-grow items-center mt-44 w-4/5">
+    <form className="flex flex-col flex-grow items-center mt-32 md:mt-40 lg:mt-44 w-4/5">
       <Image
         src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
         height={100}
